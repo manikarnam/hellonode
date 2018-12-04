@@ -35,7 +35,7 @@ node {
     }
     
     stage('Deploy') {
-        sh 'ssh -i /home/ubuntu/devops/hellonode/awskube.pem root@ec2-34-221-181-127.us-west-2.compute.amazonaws.com'
+        sh 'ssh -i "awskube.pem"  root@ec2-34-221-181-127.us-west-2.compute.amazonaws.com'
         echo "connected to ec2 instance"     
     
     }
