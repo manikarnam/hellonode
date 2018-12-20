@@ -35,7 +35,7 @@ node {
     }
     
     stage('Deploy') {
-        withCredentials([sshUserPrivateKey(credentialsId: '18fc3928-15ca-4ec6-88e5-34410bc4294e', keyFileVariable: 'key')])
+        
         echo "connected to ec2 instance"     
     
     }
